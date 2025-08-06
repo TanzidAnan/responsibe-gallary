@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 
 <body>
@@ -18,6 +19,14 @@
         <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
         <br>
         <button onclick="getRed()">Make Red</button>
+        <button id="make-pink">Make Pink</button>
+        <button id="make-green">Make green</button>
+        <button id="make-goldenRod">Make goldenRod</button>
+        <style>
+            h1{
+                color: #465107;
+            }
+        </style>
     </main>
 
     <script src="js/events.js"></script>
@@ -25,6 +34,24 @@
         function getRed(){
             document.body.style.backgroundColor='red'
         }
+
+        const pinkButton =document.getElementById('make-pink');
+        pinkButton.addEventListener('click',makePink)
+        console.log(pinkButton)
+
+        function makePink(){
+            document.body.style.backgroundColor=('pink')
+        }
+        const makeGreen =document.getElementById('make-green');
+        makeGreen.addEventListener('click',function makegreen(){
+            document.body.style.backgroundColor='green',
+            document.body.style.color='red'
+        })
+
+        document.getElementById('make-goldenRod').addEventListener('click',function(){
+            document.body.style.backgroundColor='#465107'
+        })
+
     </script>
 </body>
 
