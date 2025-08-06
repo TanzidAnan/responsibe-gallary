@@ -9,12 +9,19 @@
     <h1>Final DOM Event Handlers</h1>
     <h3 id="handler-status">Default Text</h3>
     <button onclick="hendleOnClick()">Handle Event by onClick Function</button>
+    <button onclick="hendleOnClick()">Handle Event by onClick Function</button>
+    <button id="event-lisenter">Handle Event by onClick Function</button>
 
     <script>
         function hendleOnClick(){
             const handlerStatus =document.getElementById('handler-status');
             handlerStatus.innerText='handled by function attached on onclick attribute'
         }
+
+        document.getElementById('event-lisenter').addEventListener('click',function(){
+            const  handlerStatus =document.getElementById('handler-status');
+            handlerStatus.innerText ='ami button ar text change korte parchi';
+        })
     </script>
 </body>
 </html>
