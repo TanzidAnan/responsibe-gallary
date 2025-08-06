@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive flex</title>
-    <style>
-        .container{
-            display: flex;
-            gap: 20px;
-            color: aliceblue;
-        }
-        .box{
-            background-color: blueviolet;
-            padding: 20px;
-            border-radius: 20px;
-            margin-top: 20px;
-        }
-        @media screen and (max-width: 576px) {
-            .container{
-                flex-direction: column;
-            }
-        }
-    </style>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="box">
-            <h1>Fast Box</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ab, officiis molestias animi sunt unde quos atque repudiandae distinctio commodi!</p>
-        </div>
-        <div class="box">
-            <h1>secden Box</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ab, officiis molestias animi sunt unde quos atque repudiandae distinctio commodi!</p>
-        </div>
-    </div>
+
+    <header>
+        <h1>DOM er ajke special events</h1>
+    </header>
+    <main>
+        <button onclick="console.log(5454)">Click Me</button>
+    </main>
+
+    <script src="js/events.js"></script>
 </body>
+
 </html>
