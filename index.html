@@ -14,9 +14,18 @@
     </header>
     <main>
         <button onclick="console.log(5454)">Click Me</button>
+        <br>
+        <button onclick="document.body.style.backgroundColor='yellow'">Make Yellow</button>
+        <br>
+        <button onclick="getRed()">Make Red</button>
     </main>
 
     <script src="js/events.js"></script>
+    <script>
+        function getRed(){
+            document.body.style.backgroundColor='red'
+        }
+    </script>
 </body>
 
 </html>
