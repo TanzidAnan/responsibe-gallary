@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS DOM Summary</title>
 </head>
+
 <body>
     <h1>Final DOM Event Handlers</h1>
     <h3 id="handler-status">Default Text</h3>
@@ -12,16 +14,25 @@
     <button onclick="hendleOnClick()">Handle Event by onClick Function</button>
     <button id="event-lisenter">Handle Event by onClick Function</button>
 
+    <section>
+        <br>
+        <br>
+        <p id="input-text-display">Default Input Text</p>
+        <input id="input-field" type="text">
+        <button id="btn-update">Update</button>
+    </section>
+    
     <script>
-        function hendleOnClick(){
-            const handlerStatus =document.getElementById('handler-status');
-            handlerStatus.innerText='handled by function attached on onclick attribute'
-        }
-
-        document.getElementById('event-lisenter').addEventListener('click',function(){
-            const  handlerStatus =document.getElementById('handler-status');
-            handlerStatus.innerText ='ami button ar text change korte parchi';
+        document.getElementById('btn-update').addEventListener('click',function(){
+            console.log('update button click');
+            const inputFild =document.getElementById('input-field');
+            const inputValue = inputFild.value;
+            const p =document.getElementById('input-text-display');
+            p.innerText=inputValue
+            inputFild.value=''
         })
     </script>
+    <script src="js/event-summary.js"></script>
 </body>
+
 </html>
